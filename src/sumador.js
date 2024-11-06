@@ -1,22 +1,17 @@
-function sumarCadena(cadena) {
-  if(cadena.length === 0)
-  {
-      return 0;
-  }
-  else{
-    const numeros = cadena.split(',');
-    let suma = 0;
-    for (const numero of numeros) {
-        if(Number(numero) >= 1000)
-        {
-          suma = suma + 0;
-        }
-        else{
-          suma += Number(numero);  
-        }
+function calcularCadena(cadena) {
+  if (!cadena) return 0;
+
+  const numeros = cadena.split(',');
+  let suma = 0;
+
+  for (const numero of numeros) {
+    const valor = Number(numero);
+    if (valor < 1000) {
+      suma += valor;
     }
-    return suma;
   }
+
+  return suma;
 }
 
-export default sumarCadena; 
+export default calcularCadena;
