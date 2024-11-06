@@ -1,10 +1,16 @@
 function sumarCadena(cadena) {
-  const numero = Number(cadena);
   if(cadena.length === 0)
   {
-    return 0;
+      return 0;
   }
-  return numero;
+  else{
+    const numeros = cadena.split(',');
+    let suma = 0;
+    for (const numero of numeros) {
+        suma += Number(numero);
+    }
+    return suma;
+  }
 }
 
 export default sumarCadena; 
