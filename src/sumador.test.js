@@ -5,6 +5,6 @@ describe("Sumar", () => {
     expect(sumarCadena("4")).toEqual(4);
   });
   it("Si la cadena esta vacia retorna 0", () => {
-    expect(sumarCadena("4")).toEqual(4);
+    expect(sumarCadena("")).toEqual(0);
   });
 });
