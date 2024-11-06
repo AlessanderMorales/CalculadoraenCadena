@@ -7,7 +7,13 @@ function sumarCadena(cadena) {
     const numeros = cadena.split(',');
     let suma = 0;
     for (const numero of numeros) {
-        suma += Number(numero);
+        if(Number(numero) === 1000)
+        {
+          suma = suma + 0;
+        }
+        else{
+          suma += Number(numero);  
+        }
     }
     return suma;
   }

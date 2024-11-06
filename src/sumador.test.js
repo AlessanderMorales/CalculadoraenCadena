@@ -10,4 +10,7 @@ describe("Sumar", () => {
   it("Suma de 2 numeros en cypr", () => {
     expect(sumarCadena("2,2")).toEqual(4);
   });
+  it("No se cuenta los numeros 1000", () => {
+    expect(sumarCadena("1000,1000")).toEqual(0);
+  });
 });
