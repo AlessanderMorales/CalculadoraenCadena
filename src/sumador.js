@@ -7,7 +7,7 @@ function sumarCadena(cadena) {
     const numeros = cadena.split(',');
     let suma = 0;
     for (const numero of numeros) {
-        if(Number(numero) === 1000)
+        if(Number(numero) >= 1000)
         {
           suma = suma + 0;
         }
