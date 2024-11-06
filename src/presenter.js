@@ -1,4 +1,4 @@
-import calcularCadena from "./sumador"; // Asegúrate de que esta función esté bien definida
+import calcularCadena from "./sumador"; 
 
 const form = document.querySelector("#sumar-form");
 const cadenaInput = document.querySelector("#cadena");

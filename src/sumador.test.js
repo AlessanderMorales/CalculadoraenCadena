@@ -16,4 +16,8 @@ describe("Sumar", () => {
   it("No se cuenta los numeros desde 1000 para arriba", () => {
     expect(calcularCadena("1000,1020")).toEqual(0);
   });
+  it("Con personalisacion", () => {
+    expect(calcularCadena("//[;] 6;7;4")).toEqual(17);
+  });
+  //[;]\n5;5
 });
