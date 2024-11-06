@@ -1,15 +1,12 @@
-import sumar from "./sumador";
+import sumarCadena from "./sumador"; // Asegúrate de que esta función esté bien definida
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
 const form = document.querySelector("#sumar-form");
-const div = document.querySelector("#resultado-div");
+const cadenaInput = document.querySelector("#cadena");
+const resultadoDiv = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
-
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+  const cadena = cadenaInput.value;
+  const resultado = sumarCadena(cadena);
+  resultadoDiv.innerHTML = "<p>" + resultado + "</p>";
 });

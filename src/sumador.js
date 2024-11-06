@@ -1,5 +1,6 @@
-function sumar(a, b) {
-  return a + b;
+function sumarCadena(cadena) {
+  const numero = Number(cadena);
+  return numero;
 }
 
-export default sumar;
+export default sumarCadena; 
